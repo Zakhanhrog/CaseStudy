@@ -1293,7 +1293,7 @@ const PAGES = {
     // Reset trạng thái admin
     currentState.isAdmin = false;
     
-    // Ẩn các nút admin (nếu có)
+    // Ẩn các nút admin
     document.querySelectorAll('.admin-controls').forEach(el => el.style.display = 'none');
     
     // Hiển thị thông báo
