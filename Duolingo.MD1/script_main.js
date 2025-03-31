@@ -1221,8 +1221,6 @@ const PAGES = {
       }
     });
   }
-  
- 
 
   document.addEventListener('DOMContentLoaded', function() {
     // Avatar upload
