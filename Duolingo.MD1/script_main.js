@@ -70,7 +70,7 @@ const PAGES = {
       words: ["subject", "The", "is", "English", "best"],
       correctOrder: [1, 4, 0, 2, 3],
       correctAnswer: "The best subject is English",
-      explanation: "Câu đúng là 'The best subject is English'"
+      explanation: "Câu đúng là 'The best subject is English"
     }
   ];
   
@@ -564,22 +564,23 @@ const PAGES = {
     });
   }
   
-  function playQuestionAudio(audioFile) {
-    try {
-      const audio = new Audio(audioFile);
-      audio.play().catch(e => {
-        console.error("Lỗi phát âm thanh:", e);
-        showAudioError();
-      });
+  //  hàm xử lí âm thanh nhưng đang lỗi 
+  // function playQuestionAudio(audioFile) {
+  //   try {
+  //     const audio = new Audio(audioFile);
+  //     audio.play().catch(e => {
+  //       console.error("Lỗi phát âm thanh:", e);
+  //       showAudioError();
+  //     });
       
-      const button = document.querySelector('.audio-button');
-      button.classList.add('playing');
-      setTimeout(() => button.classList.remove('playing'), 1000);
-    } catch (e) {
-      console.error("Lỗi tải file âm thanh:", e);
-      showAudioError();
-    }
-  }
+  //     const button = document.querySelector('.audio-button');
+  //     button.classList.add('playing');
+  //     setTimeout(() => button.classList.remove('playing'), 1000);
+  //   } catch (e) {
+  //     console.error("Lỗi tải file âm thanh:", e);
+  //     showAudioError();
+  //   }
+  // }
   
   function showAudioError() {
     const feedback = document.getElementById('resultFeedback');
@@ -955,7 +956,7 @@ const PAGES = {
     if (currentState.isAdmin) {
       const addCourseCard = document.createElement('div');
       addCourseCard.className = 'course-card add-new-course';
-      // ... (giữ nguyên phần HTML của thẻ)
+    
       courseGrid.appendChild(addCourseCard);
     }
   

@@ -115,9 +115,9 @@ body {
   transition: all 0.23s ease;
 }
 .function-user:hover{
-  transform: translateX(3px);
-  box-shadow: 0 10px 25px rgba(79, 228, 168, 0.4);
-  background-position: 100% 50%;
+  transform: translateX(-4px);
+  box-shadow: 0 10px 20px rgba(79, 228, 168, 0.3);
+  background: linear-gradient(135deg, #4fe4a8, #3b82f6);
 
 }
 .function-user::after{

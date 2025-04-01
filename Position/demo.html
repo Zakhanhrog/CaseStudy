@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .demo{
+    width: 100%;
+    margin: 0 0 0;
+    height: 400px;
+    background: #d14444;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  .demo::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #00f2fe;
+  }
+  .demo::after{
+    width: 100px;
+    content: '';
+    display: block;
+    height: 100px;
+    background-color: #20f376;
+  }
+  .demo1{
+    width: 100px;
+    height: 100px;
+    background-color: #353333;
+    position: absolute;
+    top: 50px;
+  }
+
+</style>
+<body>
+<div class="demo">
+  <div class="demo1"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+<ul>
+  <li>khanh</li>
+  <li>hung</li>
+  <li>hieu</li>
+</ul>
+
+</body>
+</html>
